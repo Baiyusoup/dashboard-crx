@@ -1,7 +1,6 @@
 {
   "name": "home-crx",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -9,9 +8,17 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
+    "@types/chrome": "^0.0.164",
+    "cheerio": "^1.0.0-rc.10",
     "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.37.0",
     "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "svelte-routing": "^1.6.0"
   }
 }

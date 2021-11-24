@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Lem Home",
+  "short_name": "Lem Home",
+  "version": "0.1.0",
+  "description": "自用工具",
+  "icons": {
+    "16": "static/icons/icon-16.png",
+    "48": "static/icons/icon-48.png",
+    "128": "static/icons/icon-128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "19": "static/icons/icon-19.png",
+      "38": "static/icons/icon-38.png"
+    },
+    "default_title": "Lem Home",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "storage",
+    "cookies",
+    "contextMenus",
+    "tabs",
+    "alarms",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/",
+    "https://*/"
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": ["*"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com https://*.bytegoofy.com https://*.bytescm.com https://*.pstatp.com; object-src 'self'",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

@@ -7,6 +7,7 @@ module.exports = {
     es6: true,
     browser: true
   },
+  extends: ['prettier'],
   plugins: [
     'svelte3'
   ],
