@@ -6,6 +6,6 @@
     display: flex;
     height: 100%;
     overflow: hidden;
-    padding: 16px 24px 24px 0;
+    padding: 0 24px 24px 0;
   }
 </style>

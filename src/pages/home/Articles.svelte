@@ -50,11 +50,11 @@
   .messages-section {
     flex-shrink: 0;
     background-color: var(--projects-section);
-    margin-left: 24px;
+    margin-left: 10px;
     flex: 1;
     width: 100%;
     overflow: hidden;
-    padding-bottom: 96px;
+    padding-bottom: 40px;
     border-radius: 10px;
     transition: all 300ms cubic-bezier(0.19, 1, 0.56, 1);
   }
@@ -70,8 +70,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
-    padding: 32px 24px 0 24px;
+    padding: 10px;
     background-color: var(--projects-section);
     color: var(--main-color);
   }

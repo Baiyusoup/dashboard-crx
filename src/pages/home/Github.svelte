@@ -44,8 +44,8 @@
   .projects-section {
     flex: 2;
     background-color: var(--projects-section);
-    border-radius: 10px;
-    padding: 32px 32px 0 32px;
+    border-radius: 6px;
+    padding: 10px 10px 0 10px;
     overflow: hidden;
     height: 100%;
     display: flex;

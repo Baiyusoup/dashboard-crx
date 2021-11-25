@@ -46,7 +46,7 @@
 
 <header class="crx-header">
   <div class="crx-header--left">
-    <span class="app-icon" style="margin-right: 20px;" />
+    <span class="app-icon" style="margin-left: 6px;margin-right: 14px;" />
     <div class="search-wrapper">
       <img class="enginIcon" src={imgSrc[enginIdx]} alt="engin">
       <input
@@ -118,7 +118,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 16px 24px;
+  padding: 16px 24px 16px 8px;
   position: relative;
 }
 

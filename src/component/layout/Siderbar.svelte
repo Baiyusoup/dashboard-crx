@@ -63,7 +63,7 @@
 
 <style>
 .app-sidebar {
-  padding: 40px 16px;
+  padding: 0 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
