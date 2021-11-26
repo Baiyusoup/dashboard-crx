@@ -192,7 +192,7 @@
   flex: 1;
   outline: none;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   font-size: 16px;
   background-color: var(--search-area-bg);
   color: var(--main-color);

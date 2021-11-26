@@ -6,6 +6,7 @@
   import Siderbar from './component/layout/Siderbar.svelte';
   import Home from './pages/Home.svelte';
   import About from './pages/About.svelte';
+  import News from './pages/News.svelte';
 
 </script>
 
@@ -15,6 +16,7 @@
   <Router>
     <Siderbar />
     <Route path="/" component={Home} />
+    <Route path="news" component={News} />
     <Route path="about" component={About} />
   </Router>
 </Content>
