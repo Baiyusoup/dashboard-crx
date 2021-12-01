@@ -1,14 +1,13 @@
 <script>
-import { go } from "@/api/chrome";
+  import { go } from '@/api/chrome'
 
+  export let article
 
-export let article
-
-const handleJump = () => {
-  go(article.src)
-}
-
+  const handleJump = () => {
+    go(article.src)
+  }
 </script>
+
 <div class="message-box" on:click={handleJump}>
   <div class="message-content">
     <div class="message-header">

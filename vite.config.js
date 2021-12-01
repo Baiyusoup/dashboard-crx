@@ -12,6 +12,13 @@ export default defineConfig({
   },
   server: {
     open: true,
+    proxy: {
+      '^/api/': {
+        target: 'https://e.juejin.cn',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
   },
   build: {
     assetsDir: 'static',

@@ -1,6 +1,26 @@
 <script>
+  import Repo from '@/component/repo/Repo.svelte'
+  import { onMount } from 'svelte'
 
-  import Repo from "@/component/repo/Repo.svelte";
+  onMount(async () => {
+    const res = await fetch('/api/resources/github', {
+      method: 'POST',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      },
+      body: JSON.stringify({
+        category: 'trending',
+        period: 'day',
+        lang: 'JavaScript',
+        offset: 0,
+        limit: 50,
+        cursor: '0',
+      }),
+    })
+
+    const data = await res.json()
+    console.log(data)
+  })
 
   let repos = []
 
@@ -14,28 +34,33 @@
 <div class="projects-section">
   <div class="projects-section-header">
     <p>{titles[titleIdx]}</p>
-    <button on:click={handleSwitch} class="view-btn grid-view active" title="切换">
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width="20" 
-        height="20" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        stroke-width="2" 
-        stroke-linecap="round" 
-        stroke-linejoin="round" 
+    <button
+      on:click={handleSwitch}
+      class="view-btn grid-view active"
+      title="切换"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         class="feather feather-grid"
       >
-        <rect x="3" y="3" width="7" height="7"></rect>
-        <rect x="14" y="3" width="7" height="7"></rect>
-        <rect x="14" y="14" width="7" height="7"></rect>
-        <rect x="3" y="14" width="7" height="7"></rect></svg>
+        <rect x="3" y="3" width="7" height="7" />
+        <rect x="14" y="3" width="7" height="7" />
+        <rect x="14" y="14" width="7" height="7" />
+        <rect x="3" y="14" width="7" height="7" /></svg
+      >
     </button>
   </div>
   <div class="project-boxes">
     {#each repos as repo}
-      <Repo repo={repo}/>
+      <Repo {repo} />
     {/each}
   </div>
 </div>
@@ -68,7 +93,6 @@
     margin: 0;
     color: var(--main-color);
   }
-
 
   .view-btn {
     width: 36px;

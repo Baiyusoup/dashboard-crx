@@ -1,37 +1,43 @@
 <script>
-  import Article from "@/component/article/Article.svelte";
+  import Article from '@/component/article/Article.svelte'
 
   const messageName = [
-    { 
+    {
       name: 'Stephanie',
-      content: 'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
-      time: 'Dec, 12'
+      content:
+        'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
+      time: 'Dec, 12',
     },
-    { 
+    {
       name: 'Mark',
-      content: 'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
-      time: 'Dec, 12'
+      content:
+        'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
+      time: 'Dec, 12',
     },
-    { 
+    {
       name: 'David',
-      content: 'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
-      time: 'Dec, 12'
+      content:
+        'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
+      time: 'Dec, 12',
     },
-    { 
+    {
       name: 'Jessica',
-      content: 'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
-      time: 'Dec, 12'
+      content:
+        'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
+      time: 'Dec, 12',
     },
-    { 
+    {
       name: 'Jessica',
-      content: 'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
-      time: 'Dec, 10'
+      content:
+        'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
+      time: 'Dec, 10',
     },
-    { 
+    {
       name: 'Jessica',
-      content: 'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
-      time: 'Dec, 10'
-    }
+      content:
+        'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
+      time: 'Dec, 10',
+    },
   ]
 </script>
 
@@ -41,7 +47,7 @@
   </div>
   <div class="messages">
     {#each messageName as item}
-      <Article article={item}/>
+      <Article article={item} />
     {/each}
   </div>
 </div>
@@ -64,7 +70,6 @@
     height: 100%;
     overflow-y: auto;
   }
-  
 
   .section-header {
     display: flex;
@@ -83,5 +88,4 @@
     margin: 0;
     color: var(--main-color);
   }
-
 </style>

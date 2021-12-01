@@ -1,5 +1,5 @@
 <script>
-  const msg = "Hello, this is template for ctx"
+  const msg = 'Hello, this is template for ctx'
 </script>
 
 <div class="about">

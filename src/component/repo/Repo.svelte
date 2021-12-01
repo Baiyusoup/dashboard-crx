@@ -1,5 +1,5 @@
 <script>
-  import { go } from "@/api/chrome";
+  import { go } from '@/api/chrome'
 
   export let repo
   const handleJump = () => {
@@ -72,7 +72,6 @@
     opacity: 0.7;
   }
 
-
   .project-box-footer {
     display: flex;
     justify-content: space-between;
@@ -80,7 +79,7 @@
     position: relative;
   }
   .project-box-footer:after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: rgba(255, 255, 255, 0.6);
     width: calc(100% + 32px);

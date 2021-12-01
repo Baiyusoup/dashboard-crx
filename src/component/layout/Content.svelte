@@ -1,6 +1,7 @@
 <section class="crx-content">
-  <slot></slot>
+  <slot />
 </section>
+
 <style>
   .crx-content {
     display: flex;
